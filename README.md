@@ -1,39 +1,39 @@
-This application prints the result of the closest points to the designated point.
+This application prints the results of the closest points to the designated point for tracking the Unicorns.
 
 It contains the following files:
 
 main.py:
 
-    The entry point of the application. It reads, parses and validates the input, calls the 
+The entry point of the application. It reads, parses and validates the input, calls the 
 search.py to search the points and print out the results.
 
 point.py:
 
-    This class represents the points with co-ordinates. It also has a distance member to record 
-the distance of to the designated point. The member is not actually the distance but the square 
+This class represents the points with coordinates. It also has a distance member to record 
+the distance to the designated point. The member is not actually the distance but the square 
 of the distance because it saves the time to run sqrt() and also it keeps the member as an integer. 
 
 searchResult.py:
 
-    This class represents the actual result to be printed after the search. It uses a list to 
-store the results and the list is sorted as we are using the method similar to the Insertation sort 
-to add a new point. The new point can only be inserted to the list if the distance from that point
-is among the closest ones to the designated point.
+This class represents the actual results to be printed after the search. It uses a list to 
+store the results and the list is sorted while we add a new item as we are using the method similar 
+to the insertion sort to add a new point. The new point can only be inserted to the list if the 
+distance from that point is among the closest ones to the designated point.
 
 search.py:
 
-    This class parses the input file, creates points and calculate the distances. The distance
+This class parses the input file, creates points and calculate the distances. The distance
 of a new point is compared with the distances of the existing points in the list. If the distance
-of the new point is less thn a point, the new point will be added and the existing point with the 
-longest distance will be removed.
+of the new point is less than an existing point, the new point will be added and the existing point 
+with the longest distance will be dropped.
 
 input.txt:
 
-    The sample input file for the points.
+The sample input file for the points.
 
 output.txt:
 
-    The result of running the application using the sample input.
+The result of running the application using the sample input.
 
 To run the program, use the following command:
 
@@ -51,7 +51,6 @@ On CentOS:
 Where
 
 /root/Unicorn/UnicornTrackingPython/src/main.py is the entry point of the program
-
 
 /root/Unicorn/UnicornTrackingPython/input.txt is the input file which contains all the points.
 
